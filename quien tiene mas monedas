@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class NewClass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int pedro = 0, juan = 0, monedas = 0;
+
+        for (int i = 1; i < 6; i++) {
+            monedas = sc.nextInt();
+            if (i < 4)
+                juan += monedas;
+            else
+                pedro += monedas;
+        }
+
+        if (juan > pedro)
+            System.out.println("Juan");
+        else
+            System.out.println("Pedro");
+
+    }
+
+}
